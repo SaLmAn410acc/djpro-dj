@@ -1,0 +1,36 @@
+{
+    "customSyntax": "postcss-html",
+    "extends": [
+        "stylelint-config-standard",
+        "stylelint-config-recommended-vue"
+    ],
+    "plugins": [
+        "stylelint-use-logical-spec"
+    ],
+    "overrides": [
+        {
+            "files": [
+                "**/*.scss"
+            ],
+            "customSyntax": "postcss-scss"
+        },
+        {
+            "files": [
+                "**/*.vue"
+            ],
+            "customSyntax": "postcss-html"
+        }
+    ],
+    "rules": {
+        "max-line-length": [
+            120,
+            {
+                "ignore": "comments"
+            }
+        ],
+        "liberty/use-logical-spec": true,
+        "selector-class-pattern": null,
+        "color-function-notation": null,
+        "number-max-precision": null
+    }
+}
