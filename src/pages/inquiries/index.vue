@@ -325,7 +325,39 @@ const currentTab = ref(0)
                   <VMenu
                     transition="scale-transition"
                     :close-on-content-click="false"
-                  />
+                  >
+                    <template #activator="{ props }">
+                      <VBtn
+                        variant="plain"
+                        color="#000"
+                        size="none"
+                        density="comfortable"
+                        class="px-2"
+                        v-bind="props"
+                      >
+                        <VIcon
+                          icon="pepicons-pencil:dots-y"
+                          size="30"
+                        />
+                      </VBtn>
+                    </template>
+                    <VCard>
+                      <VList>
+                        <VListItem>
+                          <a
+                            href="#"
+                            class="text-black font-weight-medium"
+                          >Archive Quote</a>
+                        </VListItem>
+                        <VListItem>
+                          <a
+                            href="#"
+                            class="text-black font-weight-medium"
+                          >Delete Quote</a>
+                        </VListItem>
+                      </VList>
+                    </VCard>
+                  </VMenu>
                 </template>
               </VDataTable>
             </VWindowItem>
@@ -394,7 +426,39 @@ const currentTab = ref(0)
                   <VMenu
                     transition="scale-transition"
                     :close-on-content-click="false"
-                  />
+                  >
+                    <template #activator="{ props }">
+                      <VBtn
+                        variant="plain"
+                        color="#000"
+                        size="none"
+                        density="comfortable"
+                        class="px-2"
+                        v-bind="props"
+                      >
+                        <VIcon
+                          icon="pepicons-pencil:dots-y"
+                          size="30"
+                        />
+                      </VBtn>
+                    </template>
+                    <VCard>
+                      <VList>
+                        <VListItem>
+                          <a
+                            href="#"
+                            class="text-black font-weight-medium"
+                          >Archive Quote</a>
+                        </VListItem>
+                        <VListItem>
+                          <a
+                            href="#"
+                            class="text-black font-weight-medium"
+                          >Delete Quote</a>
+                        </VListItem>
+                      </VList>
+                    </VCard>
+                  </VMenu>
                 </template>
               </VDataTable>
             </VWindowItem>

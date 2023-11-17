@@ -8,7 +8,7 @@
       <DialogCloseBtn @click="rejectedValue = !rejectedValue" />
 
       <!-- Dialog Content -->
-      <VCard class="modal-card-wrapper pa-6 pa-md-6 pa-lg-8 pa-xl-12 ">
+      <VCard class="modal-card-wrapper pa-8 pa-md-10 pa-lg-12 pa-xl-14 ">
         <div class="text-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -61,7 +61,7 @@
       <DialogCloseBtn @click="acceptedValue = !acceptedValue" />
 
       <!-- Dialog Content -->
-      <VCard class="modal-card-wrapper pa-6 pa-md-6 pa-lg-8 pa-xl-12 ">
+      <VCard class="modal-card-wrapper pa-8 pa-md-10 pa-lg-12 pa-xl-14 ">
         <div class="text-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
